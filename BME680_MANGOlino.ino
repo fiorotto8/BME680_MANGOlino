@@ -19,7 +19,7 @@ void setup(){
     //while (1); // Uncomment to halt if sensor is not found
   }
   else{
-    Serial.println(F("BME initialized!"));
+    //Serial.println(F("BME initialized!"));
   }
 
   // Set up oversampling and filter initialization for BME680
