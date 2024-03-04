@@ -60,11 +60,13 @@ void loop() {
         Serial.print(bme.humidity);
         Serial.print(";");
         Serial.println(bme.gas_resistance);
+        Serial.println("PANDA");
       }
 
       // Identify device
       if (incomingByte == 87) { // 'W' command
         Serial.println("MANGOlino");
+        Serial.println("PANDA");
       }
 
           //Software reset the board
@@ -72,6 +74,7 @@ void loop() {
         Serial.println("Resetting Arduinio...");
         delay(100);
         Reset();
+        Serial.println("PANDA");
       }
     }
     delay(100);
